@@ -1,3 +1,22 @@
-<p>
-  employee works!
-</p>
+<form [formGroup]="service.form" class="normal-form">
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden" formControlName="$key">
+        <mat-form-field>
+          <input matInput placeholder="Full Name" formControlName="fullName">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Mobile" formControlName="mobile">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="City" formControlName="city">
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+  </mat-grid-list>
+</form>

@@ -1,3 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.normal-form{
+    margin: 10px;
+}
+.controles-container{
+    width: 100%;
+    padding: 5%;
+}
+.controles-container > * {
+    width: 100%;
+}
