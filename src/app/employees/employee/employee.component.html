@@ -4,13 +4,17 @@
       <div class="controles-container">
         <input type="hidden" formControlName="$key">
         <mat-form-field>
-          <input matInput placeholder="Full Name" formControlName="fullName">
+          <input matInput placeholder="Full Name*" formControlName="fullName">
+          <mat-error>This field is required.</mat-error>
         </mat-form-field>
         <mat-form-field>
           <input matInput placeholder="Email" formControlName="email">
+          <mat-error>Invalid email.</mat-error>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Mobile" formControlName="mobile">
+          <input matInput placeholder="Mobile*" formControlName="mobile">
+          <mat-error *ngIf="service.form.controls['mobile'].errors?.required">This field is required.</mat-error>
+          <mat-error *ngIf="service.form.controls['mobile'].errors?.minlength">Minimum 8 characters needed.</mat-error>
         </mat-form-field>
         <mat-form-field>
           <input matInput placeholder="City" formControlName="city">
@@ -39,8 +43,8 @@
         </mat-form-field>
         <mat-checkbox formControlName="isPermanent">Permanent Employee</mat-checkbox>
         <div class="button-row">
-            <button mat-raised-button color="primary" type="submit">Submit</button>
-            <button mat-raised-button color="warn" type="submit">Clear</button>
+            <button mat-raised-button color="primary" type="submit" [disabled]="service.form.invalid">Submit</button>
+            <button mat-raised-button color="warn" type="submit" (click)="onClear()">Clear</button>
         </div>
       </div>
     </mat-grid-tile>
