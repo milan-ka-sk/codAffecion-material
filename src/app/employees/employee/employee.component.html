@@ -24,6 +24,14 @@
           <mat-radio-button value="2">Female</mat-radio-button>
           <mat-radio-button value="3">Other</mat-radio-button>
         </mat-radio-group>
+        <mat-form-field>
+          <mat-select formControlName="department" placeholder="Department">
+            <mat-option>None</mat-option>
+            <ng-container *ngFor="let d of departments">
+              <mat-option value="{{d.id}}">{{d.value}}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
       </div>
     </mat-grid-tile>
   </mat-grid-list>
