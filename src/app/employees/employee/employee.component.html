@@ -36,7 +36,8 @@
             <input matInput [matDatepicker]="picker" placeholder="Hire Date" formControlName="hireDate">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
-          </mat-form-field>
+        </mat-form-field>
+        <mat-checkbox formControlName="isPermanent">Permanent Employee</mat-checkbox>
       </div>
     </mat-grid-tile>
   </mat-grid-list>
