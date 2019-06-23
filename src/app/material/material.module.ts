@@ -9,13 +9,15 @@ import * as Mat from '@angular/material';
     Mat.MatToolbarModule,
     Mat.MatGridListModule,
     Mat.MatInputModule,
-    Mat.MatFormFieldModule
+    Mat.MatFormFieldModule,
+    Mat.MatRadioModule
   ],
   exports: [
     Mat.MatToolbarModule,
     Mat.MatGridListModule,
     Mat.MatInputModule,
-    Mat.MatFormFieldModule
+    Mat.MatFormFieldModule,
+    Mat.MatRadioModule
   ]
 })
 export class MaterialModule { }
