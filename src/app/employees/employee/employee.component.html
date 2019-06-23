@@ -32,6 +32,11 @@
             </ng-container>
           </mat-select>
         </mat-form-field>
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Hire Date" formControlName="hireDate">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
       </div>
     </mat-grid-tile>
   </mat-grid-list>

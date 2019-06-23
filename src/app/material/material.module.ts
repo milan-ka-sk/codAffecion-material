@@ -11,7 +11,9 @@ import * as Mat from '@angular/material';
     Mat.MatInputModule,
     Mat.MatFormFieldModule,
     Mat.MatRadioModule,
-    Mat.MatSelectModule
+    Mat.MatSelectModule,
+    Mat.MatDatepickerModule,
+    Mat.MatNativeDateModule
   ],
   exports: [
     Mat.MatToolbarModule,
@@ -19,7 +21,9 @@ import * as Mat from '@angular/material';
     Mat.MatInputModule,
     Mat.MatFormFieldModule,
     Mat.MatRadioModule,
-    Mat.MatSelectModule
+    Mat.MatSelectModule,
+    Mat.MatDatepickerModule,
+    Mat.MatNativeDateModule
   ]
 })
 export class MaterialModule { }
