@@ -31,8 +31,8 @@
         <mat-form-field>
           <mat-select formControlName="department" placeholder="Department">
             <mat-option>None</mat-option>
-            <ng-container *ngFor="let d of departments">
-              <mat-option value="{{d.id}}">{{d.value}}</mat-option>
+            <ng-container *ngFor="let d of departmentService.array">
+              <mat-option value="{{d.$key}}">{{d.code}}-{{d.name}}</mat-option>
             </ng-container>
           </mat-select>
         </mat-form-field>
