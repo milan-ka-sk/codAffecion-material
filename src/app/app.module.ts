@@ -7,7 +7,7 @@ import { AngularFireDatabaseModule} from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeComponent } from './employees/employee/employee.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { environment } from '../environments/environment';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
@@ -23,6 +23,7 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     BrowserModule,
     MaterialModule,
     ReactiveFormsModule,
+    FormsModule,
     AngularFireModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
