@@ -22,3 +22,10 @@ snack-bar-container.success{
     background-color: #ddd;
     color: #000;
 }
+.hide{
+    display: none;
+}
+mat-footer-row mat-footer-cell{
+    justify-content: center;
+    font-style: italic;
+}
